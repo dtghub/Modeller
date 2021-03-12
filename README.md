@@ -1,3 +1,7 @@
+# Created as a repository to add some React code - to create a basic financial investment choices modeller for Pension products
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
