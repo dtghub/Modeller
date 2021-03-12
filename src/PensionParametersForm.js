@@ -30,3 +30,4 @@ export default function PensionParametersForm ({ onNewParameters = f => f}) {
         </form>    
     );
 };
+
