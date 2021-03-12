@@ -1,0 +1,16 @@
+Start with the obvious; an initial set of input boxes, then have them do a calculations and expand from there
+
+comparing 3 different growth rates
+
+choose retirement age and allow to show the effect of changing the age
+
+choose a different fund from a list
+
+ability to add state pension to estimate
+
+ability to add more than 1 fund
+
+add graphical depiction
+
+explore developing the interface - e.g. tabbed sections etc?
+
