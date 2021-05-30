@@ -9,7 +9,7 @@ export default function PensionParametersForm ({ onNewParameters = f => f}) {
         onNewParameters(retirementAge.value, policyValue.value);
         //resetRetirementAge();
         //resetPolicyValue();
-        // Use these if implementing an 'add pension' option.
+        // Disabled for now - keep here as might want to use these if implementing an 'add pension' option.
     };
 
     return ( 
