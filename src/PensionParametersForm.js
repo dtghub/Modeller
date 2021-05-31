@@ -1,19 +1,35 @@
 import { useInput } from "./hooks";
+import { usePensions } from "./PensionProvider";
 
-export default function PensionParametersForm ({ onNewParameters = f => f}) {
+export default function PensionParametersForm() {
     const [retirementAge, resetRetirementAge] = useInput(67);
     const [policyValue, resetPolicyValue] = useInput(0);
+    const [providerName, resetProviderName] = useInput("Provider Name");
+    const [policyNumber, resetPolicyNumber] = useInput("Policy 123456");
+    const { addPension } = usePensions();
 
-    const submit = event => {
-        event.preventDefault();
-        onNewParameters(retirementAge.value, policyValue.value);
-        //resetRetirementAge();
-        //resetPolicyValue();
-        // Disabled for now - keep here as might want to use these if implementing an 'add pension' option.
+    const submit = e => {
+        e.preventDefault();
+        addPension(providerName.value, policyNumber.value, retirementAge.value, policyValue.value);
+        resetRetirementAge();
+        resetPolicyValue();
     };
 
     return ( 
         <form onSubmit={submit}>
+
+            <input
+            {...providerName}
+            type="text"
+            placeholder="Pension company (e.g. Scottish Widows)"
+            required
+            />
+            <input
+            {...policyNumber}
+            type="text"
+            placeholder="Policy Reference (e.g. TK1234578)"
+            required
+            />
             <input
             {...retirementAge}
             type="text"
@@ -26,7 +42,7 @@ export default function PensionParametersForm ({ onNewParameters = f => f}) {
             placeholder="Value of your policy."
             required
             />
-            <button>Calculate</button>
+            <button>Add pension</button>
         </form>    
     );
 };
