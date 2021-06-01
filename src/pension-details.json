@@ -4,21 +4,21 @@
       "provider": "Scottish Widows",
       "policy": "Retirement Account",
       "nrd": 55,
-      "value": 0
+      "pensionValue": 0
     },
     {
       "id": "preset-two",
       "provider": "Scottish Widows1",
       "policy": "Corporate policy",
       "nrd": 67,
-      "value": 1
+      "pensionValue": 1
     },
     {
       "id": "preset-three",
       "provider": "Scottish Widows2",
       "policy": "Workplace savings",
       "nrd": 65,
-      "value": 2
+      "pensionValue": 2
     }
 ]
   

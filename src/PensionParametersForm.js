@@ -13,6 +13,8 @@ export default function PensionParametersForm() {
         addPension(providerName.value, policyNumber.value, retirementAge.value, policyValue.value);
         resetRetirementAge();
         resetPolicyValue();
+        resetProviderName();
+        resetPolicyNumber();
     };
 
     return ( 
