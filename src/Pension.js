@@ -4,7 +4,7 @@ import { usePensions } from "./PensionProvider";
 
 export default function Pension({ id, provider, policy, nrd, pensionValue }) {
   const { removePension } = usePensions();
-  const myParams = {retirementAge: nrd, policyValue: pensionValue};
+  const myParams = {retirementAge: nrd, pensionValue: pensionValue};
   return (
     <section>
       <div style={{border:"1px solid red"}}>

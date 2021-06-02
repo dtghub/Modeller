@@ -8,7 +8,7 @@ export const usePensions = () => useContext(PensionContext);
 export default function PensionProvider({ children }) {
   const [pensions, setPensions] = useState(pensionData);
 
-  const addPension = (provider, policy, nrd, value) =>
+  const addPension = (provider, policy, nrd, pensionValue) =>
     setPensions([
       ...pensions,
       {
@@ -16,7 +16,7 @@ export default function PensionProvider({ children }) {
         provider,
         policy,
         nrd,
-        value
+        pensionValue
       }
     ]);
 

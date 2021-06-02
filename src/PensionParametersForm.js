@@ -3,16 +3,16 @@ import { usePensions } from "./PensionProvider";
 
 export default function PensionParametersForm() {
     const [retirementAge, resetRetirementAge] = useInput(67);
-    const [policyValue, resetPolicyValue] = useInput(0);
+    const [pensionValue, resetPensionValue] = useInput(0);
     const [providerName, resetProviderName] = useInput("Provider Name");
     const [policyNumber, resetPolicyNumber] = useInput("Policy 123456");
     const { addPension } = usePensions();
 
     const submit = e => {
         e.preventDefault();
-        addPension(providerName.value, policyNumber.value, retirementAge.value, policyValue.value);
+        addPension(providerName.value, policyNumber.value, retirementAge.value, pensionValue.value);
         resetRetirementAge();
-        resetPolicyValue();
+        resetPensionValue();
         resetProviderName();
         resetPolicyNumber();
     };
@@ -39,7 +39,7 @@ export default function PensionParametersForm() {
             required
             />
             <input
-            {...policyValue}
+            {...pensionValue}
             type="text"
             placeholder="Value of your policy."
             required
