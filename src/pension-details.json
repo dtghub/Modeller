@@ -3,21 +3,21 @@
       "id": "preset-one",
       "provider": "Scottish Widows",
       "policy": "Retirement Account",
-      "nrd": 55,
+      "retirementAge": 55,
       "pensionValue": 0
     },
     {
       "id": "preset-two",
       "provider": "Scottish Widows1",
       "policy": "Corporate policy",
-      "nrd": 67,
+      "retirementAge": 67,
       "pensionValue": 1
     },
     {
       "id": "preset-three",
       "provider": "Scottish Widows2",
       "policy": "Workplace savings",
-      "nrd": 65,
+      "retirementAge": 65,
       "pensionValue": 2
     }
 ]
