@@ -17,7 +17,13 @@ explore developing the interface - e.g. tabbed sections etc?
 
 ----------------------------------
 
+OK, so now we have an intial 'somtehing' working, we need to make what it does more useful.
 
+The app can know about the policy or policies that the user has with that provider, and the projections can be made to a selected retirement age, but if the user adds policies from another provider they are ideally going to have to also have a projection to that retirement age, or we are going to have to offer to do a projection for them, probably by making some crazy assumptions, or by asking the user for the investments (e.g. the fund ISIN or SEDOL numebr and looking up the assumed growth  rates for that fund.
+
+The current aim is to take the projected value at retirement for each pension and aggregate them together to show what they might be projected to be worth at retirement and allow the policyholder to e.g. adjust their regular contibution rate to see how that might affect their retirement income.
+
+Instead of the curent arrangement I think the polocies should be added with an add button and then the values and paramenter set up within the 'tile', using edit functionality build into the tile, and we also need to prevent it from being too easy to delete the tile.Also have an option to remove he pension tile from the projectoin without deleting it (a checkbox prperty that 'includes' the pension in the projection.) 
 
 
 

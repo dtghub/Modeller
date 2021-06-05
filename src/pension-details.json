@@ -1,24 +1,24 @@
 [
     {
       "id": "preset-one",
-      "provider": "Scottish Widows",
-      "policy": "Retirement Account",
+      "provider": "Mercrr",
+      "policy": "Policy 12345",
       "retirementAge": 55,
-      "pensionValue": 0
+      "pensionValue": 2500.23
     },
     {
       "id": "preset-two",
-      "provider": "Scottish Widows1",
-      "policy": "Corporate policy",
+      "provider": "Aegon",
+      "policy": "Policy 98765",
       "retirementAge": 67,
-      "pensionValue": 1
+      "pensionValue": 750.36
     },
     {
       "id": "preset-three",
-      "provider": "Scottish Widows2",
-      "policy": "Workplace savings",
+      "provider": "Aviva",
+      "policy": "Policy TK098764",
       "retirementAge": 65,
-      "pensionValue": 2
+      "pensionValue": 2347.14
     }
 ]
   
