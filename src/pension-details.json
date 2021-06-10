@@ -1,7 +1,7 @@
 [
     {
       "id": "preset-one",
-      "provider": "Mercrr",
+      "provider": "Mercer",
       "policy": "Policy 12345",
       "retirementAge": 55,
       "pensionValue": 2500.23

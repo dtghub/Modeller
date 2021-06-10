@@ -1,0 +1,23 @@
+
+.pensionTile {
+  flex: auto;
+  justify-content: flex-start;
+  border-radius: 20px;
+  float: left;
+  align-items: center;
+  width: 350pt;
+  padding: 10pt;
+  margin: 10pt;
+  background-color: rgba(248, 239, 107, 0.822);
+}
+
+.providerNameStyle {
+    border: 0px;
+    height: 40px;
+    line-height: 25px;
+    line-break: auto;
+    background-color: transparent;
+    color: blue;  
+    font-weight: bold;  
+    font-size: 250%; 
+}

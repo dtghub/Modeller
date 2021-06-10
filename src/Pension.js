@@ -1,3 +1,4 @@
+import './Pension.css';
 import { useInput } from "./hooks";
 import CalculateProjectedValue from "./CalculateProjectedValue";
 import { FaTrash } from "react-icons/fa";
@@ -8,13 +9,14 @@ export default function Pension({ id, provider, policy, retirementAge, pensionVa
   const myParams = {retirementAge, pensionValue};
   const [providerName, resetProviderName] = useInput(provider);
   return (
-    <section>
-      <div style={{border:"1px solid red"}}>
+    <section className="pensionTile" >
+      <div>
         <form>
           <input
+          className="providerNameStyle"
           {...providerName}
-          type="text"
-          placeholder="Pension company (e.g. Scottish Widows)"
+          type="text" 
+          placeholder="Click to add Name"
           required
           />
         </form> 
