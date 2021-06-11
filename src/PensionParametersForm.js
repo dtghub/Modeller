@@ -2,50 +2,42 @@ import { useInput } from "./hooks";
 import { usePensions } from "./PensionProvider";
 
 export default function PensionParametersForm() {
-    const [retirementAge, resetRetirementAge] = useInput(67);
-    const [pensionValue, resetPensionValue] = useInput(0);
-    const [providerName, resetProviderName] = useInput("Provider Name");
-    const [policyNumber, resetPolicyNumber] = useInput("Policy 123456");
+    const pensionValue = 0;
+    const providerName = "";
+    const policyNumber = "";
+    const [retAge, resetRetirementAge] = useInput(67);
     const { addPension } = usePensions();
+    const { updateRetirementAge } = usePensions();
+    
 
     const submit = e => {
         e.preventDefault();
-        addPension(providerName.value, policyNumber.value, retirementAge.value, pensionValue.value);
-        resetRetirementAge();
-        resetPensionValue();
-        resetProviderName();
-        resetPolicyNumber();
+        addPension(providerName.value, policyNumber.value, pensionValue.value);
+    };
+
+    const submitNewAge = e => {
+        e.preventDefault();
+        updateRetirementAge(retAge.value);
     };
 
     return ( 
+        <section>
+        <form onSubmit={submitNewAge}>
+        <input
+        className="tbd"
+        {...retAge}
+        type="text" 
+        placeholder="Age"
+        required
+        />
+        <button>Update retirement Age</button>
+      </form>
         <form onSubmit={submit}>
-
-            <input
-            {...providerName}
-            type="text"
-            placeholder="Pension company (e.g. Scottish Widows)"
-            required
-            />
-            <input
-            {...policyNumber}
-            type="text"
-            placeholder="Policy Reference (e.g. TK1234578)"
-            required
-            />
-            <input
-            {...retirementAge}
-            type="text"
-            placeholder="Retirement Age (e.g. 67)"
-            required
-            />
-            <input
-            {...pensionValue}
-            type="text"
-            placeholder="Value of your policy."
-            required
-            />
+            <h4>Use this button if you have other pensions you would like to include in the projection:
             <button>Add pension</button>
-        </form>    
+            </h4>
+        </form>  
+        </section>  
     );
 };
 

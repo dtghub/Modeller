@@ -3,21 +3,18 @@
       "id": "preset-one",
       "provider": "Mercer",
       "policy": "Policy 12345",
-      "retirementAge": 55,
       "pensionValue": 2500.23
     },
     {
       "id": "preset-two",
       "provider": "Aegon",
       "policy": "Policy 98765",
-      "retirementAge": 67,
       "pensionValue": 750.36
     },
     {
       "id": "preset-three",
       "provider": "Aviva",
       "policy": "Policy TK098764",
-      "retirementAge": 65,
       "pensionValue": 2347.14
     }
 ]
